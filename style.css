@@ -1,21 +1,159 @@
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #1a002b, #2d0057, #0f8b4c);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
-h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+body{
+background:linear-gradient(135deg,#17002f,#25004b,#006b43);
+color:#fff;
+overflow-x:hidden;
 }
 
-p {
-    font-size: 1.2rem;
-    opacity: 0.9;
+header{
+position:fixed;
+width:100%;
+top:0;
+left:0;
+background:rgba(0,0,0,.45);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+nav{
+max-width:1200px;
+margin:auto;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav h2{
+color:#00ff99;
+font-size:28px;
+font-weight:700;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00ff99;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("assets/img/foto.jpg");
+background-size:cover;
+background-position:center;
+}
+
+.hero-content h1{
+font-size:70px;
+font-weight:900;
+text-shadow:0 0 20px #00ff99;
+}
+
+.hero-content p{
+margin:20px 0;
+font-size:24px;
+}
+
+.botao{
+display:inline-block;
+padding:18px 40px;
+border-radius:50px;
+background:#00ff99;
+color:#111;
+font-weight:bold;
+text-decoration:none;
+transition:.3s;
+}
+
+.botao:hover{
+transform:scale(1.08);
+box-shadow:0 0 30px #00ff99;
+}
+
+section{
+padding:100px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+section h2{
+font-size:40px;
+margin-bottom:25px;
+color:#00ff99;
+}
+
+section p{
+font-size:19px;
+line-height:1.8;
+}
+
+.contato{
+text-align:center;
+}
+
+.whatsapp{
+display:inline-block;
+margin-top:25px;
+padding:18px 40px;
+background:#25D366;
+color:white;
+border-radius:50px;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+}
+
+.whatsapp:hover{
+transform:scale(1.05);
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#111;
+margin-top:80px;
+color:#aaa;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:45px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav div{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
 }
